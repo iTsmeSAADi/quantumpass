@@ -1,0 +1,128 @@
+.cloths-navbar{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center; 
+    padding: 0px 20px;
+    height: 80px;
+    /* background: rgb(23, 0, 0); */
+    background: rgb(210, 210, 210);
+    border-bottom: 1px solid gray;
+    
+}
+
+
+.menu{
+    display: flex;
+    gap: 40px;
+    
+  
+    
+}
+
+/* .menu {
+    list-style: none;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bold;
+} */
+
+.menu li:hover{
+    cursor: pointer;
+ 
+    /* text-decoration-line: underline; */
+  
+ 
+}
+
+.navbar__icon{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.nav-search{
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    background: rgb(210, 210, 210);
+    margin-left: 400px;
+} 
+.nav-search:hover{
+    background: white;
+} 
+@media(max-width:600px){
+    .navbar__icon{
+        display: flex;
+
+         /* margin-left: 100px; */
+        
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        margin-top: 80px;
+        background: rgb(23, 0, 0);
+        height: 80vh;
+        width: 100%;
+        z-index: 999;
+        gap: 50px;
+        padding-top: 20px;
+        text-align: center;
+        transition: .5s ease-in-out;
+        color: white;
+    }
+    .menu.active{
+        position: absolute;
+        left: 0;
+    }
+    
+
+} 
+
+@media (max-width:1320px) {
+    .navbar__icon{
+        display: flex;
+        color: black;
+         /* margin-left: 400px; */
+         padding: 0px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        margin-top: 80px;
+        background: #102935;
+        height: 80vh;
+        width: 100%;
+        z-index: 999;
+        gap: 50px;
+        padding-top: 20px;
+        text-align: center;
+        transition: .5s ease-in-out;
+        color: white;
+    }
+    .menu.active{
+        position: absolute;
+        left: 0;
+    }
+    
+    .nav-search{
+        padding: 2px 3px 2px 3px;
+        margin-left: 150px;
+        /* background: white; */
+        justify-items: center;
+        width: 150px;
+    }
+    
+
+}
+
