@@ -209,7 +209,7 @@ return data.success ? (
             <div className="px-6">
               <div className="px-4 py-6 gap-x-3 mt-4 border shadow-lg rounded-lg">
                 <div className="flex flex-col lg:flex-row  justify-between gap-x-8">
-                  <div style={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+                  <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
                     <div>
                       <Typography level="title-xl" fontWeight="bold" mb={2}>
                         Basic Information
@@ -251,7 +251,7 @@ return data.success ? (
                     </div>
                   </div>
 
-                  <div  style={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+                  <div  style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
                     <div>
                       <Typography level="title-xl" fontWeight="bold" mb={2}>
                         Document Front
@@ -262,7 +262,7 @@ return data.success ? (
                     </div>
                   </div>
 
-                  <div style={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+                  <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
                     <div>
                       <Typography level="title-xl" fontWeight="bold" mb={2}>
                         Document Back
@@ -294,7 +294,7 @@ return data.success ? (
             <div className="px-6">
               <div className="px-4 py-6 gap-x-3 mt-4 border shadow-lg rounded-lg">
                 <div className="flex flex-col lg:flex-row  justify-between gap-x-8">
-                  <div sx={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+                  <div sx={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
                     <div>
                       <Typography level="title-xl" fontWeight="bold" mb={2}>
                         Document being process
@@ -330,7 +330,7 @@ return data.success ? (
                 <div className="px-4 py-6 gap-x-3 mt-4 border shadow-lg rounded-lg">
                   <div className="flex flex-col lg:flex-row  justify-between gap-x-8">
                     {/* Card 1 */}
-                    <div style={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+                    <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
                       <div>
                         <Typography level="title-xl" fontWeight="bold" mb={2}>
                           {data.type}
@@ -342,7 +342,7 @@ return data.success ? (
                     </div>
 
                     {/* Card 2 */}
-                    <div style={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+                    <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
                       <div>
                         <Typography level="title-xl" fontWeight="bold" mb={2}>
                           {data.type}
@@ -391,7 +391,7 @@ return data.success ? (
           <div className="px-6">
             <div className="px-4 py-6 gap-x-3 mt-4 border shadow-lg rounded-lg">
               <div className="flex flex-col lg:flex-row  justify-between gap-x-8">
-                <div style={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+                <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
                   <div>
                     <Typography level="title-xl" fontWeight="bold" mb={2}>
                       Basic Information
@@ -409,7 +409,7 @@ return data.success ? (
                   </div>
                 </div>
 
-                <div style={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+                <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
                   <div>
                     <Typography level="title-xl" fontWeight="bold" mb={2}>
                       Document Front
@@ -420,7 +420,7 @@ return data.success ? (
                   </div>
                 </div>
 
-                <div style={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+                <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
                   <div>
                     <Typography level="title-xl" fontWeight="bold" mb={2}>
                       Document Back

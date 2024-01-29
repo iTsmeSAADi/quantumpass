@@ -73,10 +73,7 @@ const handleClose = () => setOpen(false);
         <CiFilter onClick={handleOpen} className="text-2xl lg:hidden"/>
    
         </div>
-<<<<<<< HEAD
-=======
         <div className="p-12">
->>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
     <Modal
         open={open}
         onClose={handleClose}
@@ -140,10 +137,7 @@ const handleClose = () => setOpen(false);
           </div>
         </Box>
       </Modal>
-<<<<<<< HEAD
-=======
     </div>
->>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
           <div className="lg:flex items-center hidden space-y-3 gap-x-4">
             <input
               value={searchTerm}

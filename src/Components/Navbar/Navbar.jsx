@@ -216,11 +216,7 @@ const Navbar = () => {
                       </Popover>
                     </div>
                   ) : (
-<<<<<<< HEAD
-                    <div className="absolute -top-[0vh] w-full space-y-4">
-=======
                     <div className="absolute -top-[80vh] w-full space-y-4">
->>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                       {user.role === "admin" ? (
                         <div className="flex flex-col  items-center justify-center  w-full">
                           <Link
