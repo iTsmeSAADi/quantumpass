@@ -203,13 +203,22 @@ return data.success ? (
           <></>
         ) : (
           <>
+<<<<<<< HEAD
             <div className="flex items-start gap-x-3 mt-8" style={{ marginLeft: '30px' }}>
+=======
+            <div className="flex items-center gap-x-3 mt-8" style={{ marginLeft: '30px' }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
               <h1 className="text-4xl font-semibold">{data.screeningReport.manualScreeningType}</h1>
             </div>
             <div className="px-6">
               <div className="px-4 py-6 gap-x-3 mt-4 border shadow-lg rounded-lg">
+<<<<<<< HEAD
                 <div className="flex flex-col lg:flex-row  justify-between gap-x-8">
                   <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+=======
+                <div className="flex gap-x-3 items-center justify-between">
+                  <Card sx={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                     <div>
                       <Typography level="title-xl" fontWeight="bold" mb={2}>
                         Basic Information
@@ -249,9 +258,15 @@ return data.success ? (
                           >Not Verified <CloseIcon style={{"color":"red","fontSize":"12px","position":"relative","bottom":"1px","fontWeight":"bold"}}/> </span>}
                       </Typography>
                     </div>
+<<<<<<< HEAD
                   </div>
 
                   <div  style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+=======
+                  </Card>
+
+                  <Card sx={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                     <div>
                       <Typography level="title-xl" fontWeight="bold" mb={2}>
                         Document Front
@@ -260,9 +275,15 @@ return data.success ? (
                         <img src={data.screeningReport.doc_front_url} alt="doc_front_url" />
                       </Typography>
                     </div>
+<<<<<<< HEAD
                   </div>
 
                   <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+=======
+                  </Card>
+
+                  <Card sx={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                     <div>
                       <Typography level="title-xl" fontWeight="bold" mb={2}>
                         Document Back
@@ -271,7 +292,11 @@ return data.success ? (
                         <img src={data.screeningReport.doc_back_url} alt="doc_back_url" />
                       </Typography>
                     </div>
+<<<<<<< HEAD
                   </div>
+=======
+                  </Card>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                 </div>
               </div>
             </div>
@@ -288,25 +313,42 @@ return data.success ? (
           <></>
         ) : (
           <>
+<<<<<<< HEAD
             <div className="flex items-start gap-x-3 mt-8" style={{ marginLeft: '30px' }}>
+=======
+            <div className="flex items-center gap-x-3 mt-8" style={{ marginLeft: '30px' }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
               <h1 className="text-4xl font-semibold">{data.screeningReport.manualScreeningType}</h1>
             </div>
             <div className="px-6">
               <div className="px-4 py-6 gap-x-3 mt-4 border shadow-lg rounded-lg">
+<<<<<<< HEAD
                 <div className="flex flex-col lg:flex-row  justify-between gap-x-8">
                   <div sx={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+=======
+                <div className="flex gap-x-3 items-center justify-between">
+                  <Card sx={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                     <div>
                       <Typography level="title-xl" fontWeight="bold" mb={2}>
                         Document being process
                       </Typography>
                       {/* ... Other information components */}
+<<<<<<< HEAD
                       <Typography level="body-md" mb={1} style={{display: 'flex', flexDirection: 'column', alignItems: 'start'}}>
+=======
+                      <Typography level="body-md" mb={1} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                         Your Document is still processing for forensic analysis. This might take a few minutes. <br />
                       <CircularProgress color="success" />
 
                       </Typography>
                     </div>
+<<<<<<< HEAD
                   </div>
+=======
+                  </Card>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
 
                 </div>
               </div>
@@ -323,14 +365,24 @@ return data.success ? (
             <></>
           ) : (
             <>
+<<<<<<< HEAD
               <div className="flex items-start gap-x-3 mt-8" style={{ marginLeft: '30px' }}>
+=======
+              <div className="flex items-center gap-x-3 mt-8" style={{ marginLeft: '30px' }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                 <h1 className="text-4xl font-semibold">{data.message}</h1>
               </div>
               <div className="px-6">
                 <div className="px-4 py-6 gap-x-3 mt-4 border shadow-lg rounded-lg">
+<<<<<<< HEAD
                   <div className="flex flex-col lg:flex-row  justify-between gap-x-8">
                     {/* Card 1 */}
                     <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+=======
+                  <div className="flex gap-x-3 items-center justify-between">
+                    {/* Card 1 */}
+                    <Card sx={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                       <div>
                         <Typography level="title-xl" fontWeight="bold" mb={2}>
                           {data.type}
@@ -339,10 +391,17 @@ return data.success ? (
                           {extractOrigValues(data.screeningReport.data, JSON.stringify(data.screeningReport.meta_data.review_url))}
                         </Typography>
                       </div>
+<<<<<<< HEAD
                     </div>
 
                     {/* Card 2 */}
                     <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+=======
+                    </Card>
+
+                    {/* Card 2 */}
+                    <Card sx={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                       <div>
                         <Typography level="title-xl" fontWeight="bold" mb={2}>
                           {data.type}
@@ -368,7 +427,11 @@ return data.success ? (
                           )}
                         </Typography>
                       </div>
+<<<<<<< HEAD
                     </div>
+=======
+                    </Card>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                   </div>
                 </div>
               </div>
@@ -385,13 +448,22 @@ return data.success ? (
         <></>
       ) : (
         <>
+<<<<<<< HEAD
           <div className="flex items-start gap-x-3 mt-8" style={{ marginLeft: '30px' }}>
+=======
+          <div className="flex items-center gap-x-3 mt-8" style={{ marginLeft: '30px' }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
             <h1 className="text-4xl font-semibold">Document Not Verified</h1>
           </div>
           <div className="px-6">
             <div className="px-4 py-6 gap-x-3 mt-4 border shadow-lg rounded-lg">
+<<<<<<< HEAD
               <div className="flex flex-col lg:flex-row  justify-between gap-x-8">
                 <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+=======
+              <div className="flex gap-x-3 items-center justify-between">
+                <Card sx={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                   <div>
                     <Typography level="title-xl" fontWeight="bold" mb={2}>
                       Basic Information
@@ -407,9 +479,15 @@ return data.success ? (
                         >Not Verified <CloseIcon style={{"color":"red","fontSize":"12px","position":"relative","bottom":"1px","fontWeight":"bold"}}/> </span>}
                     </Typography>
                   </div>
+<<<<<<< HEAD
                 </div>
 
                 <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+=======
+                </Card>
+
+                <Card sx={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                   <div>
                     <Typography level="title-xl" fontWeight="bold" mb={2}>
                       Document Front
@@ -418,9 +496,15 @@ return data.success ? (
                       <img src={data.screeningReport.doc_front_url} alt="doc_front_url" />
                     </Typography>
                   </div>
+<<<<<<< HEAD
                 </div>
 
                 <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+=======
+                </Card>
+
+                <Card sx={{ width: 'calc(33% - 1rem)', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }}>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
                   <div>
                     <Typography level="title-xl" fontWeight="bold" mb={2}>
                       Document Back
@@ -429,7 +513,11 @@ return data.success ? (
                       <img src={data.screeningReport.doc_back_url} alt="doc_back_url" />
                     </Typography>
                   </div>
+<<<<<<< HEAD
                 </div>
+=======
+                </Card>
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
               </div>
             </div>
           </div>

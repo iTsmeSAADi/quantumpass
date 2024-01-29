@@ -6,10 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+<<<<<<< HEAD
+=======
+    "start": "npx hhtp-server ./dist",
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@cyntler/react-doc-viewer": "^1.14.1",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
@@ -17,6 +22,13 @@
     "@mui/icons-material": "^5.15.5",
     "@mui/joy": "^5.0.0-beta.23",
     "@mui/material": "^5.15.5",
+=======
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.6",
+    "@mui/joy": "^5.0.0-beta.24",
+    "@mui/material": "^5.14.13",
+>>>>>>> 6fcb6695327c85b7deb738a143e5b70288d7234e
     "@mui/styled-engine-sc": "^6.0.0-alpha.1",
     "@react-spring/web": "^9.7.3",
     "@reduxjs/toolkit": "^1.9.7",
