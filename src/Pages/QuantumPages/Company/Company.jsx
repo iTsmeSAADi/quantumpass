@@ -46,8 +46,8 @@ const Company = () => {
 
   const navigate = useNavigate();
 
-  const toCompanyDetail = () => {
-    navigate("/companydetail");
+  const toCompanyDetail = (id) => {
+    navigate("/companydetail/"+id);
   };
   // Retrieve user data from localStorage
   const userData = localStorage.getItem("user");
@@ -258,11 +258,7 @@ const Company = () => {
                       .includes(searchTerm.toLowerCase())
                   )
                   .map((items, index) => (
-                    <div
-                      onClick={toCompanyDetail}
-                      className="border w-full py-2 px-2 shadow cursor-pointer rounded-lg font-semibold"
-                      key={index}
-                    >
+                    <div onClick={() => toCompanyDetail(items._id)} className="border w-full py-2 px-2 shadow cursor-pointer rounded-lg font-semibold" key={index}>
                       {items.companyName}
                     </div>
                   ))}

@@ -146,12 +146,16 @@ const DocumentForensic = () => {
             },
           }
         );
-
+  
         if (response.data.status === "success") {
           const types = response.data.data.document_types.map(
             (type) => type.title
           );
-          setAllowedTypes(types);
+  
+          // Filter out types that include "QuantumPass"
+          const typesWithQuantumPass = types.filter(type => type.includes("QuantumPass"));
+  
+          setAllowedTypes(typesWithQuantumPass);
         } else {
           console.error("Failed to fetch allowed document types!");
         }
@@ -159,13 +163,14 @@ const DocumentForensic = () => {
         console.error("An error occurred while fetching document types:", error);
       }
     };
-
+  
     fetchAllowedDocumentTypes();
     console.log("Response Message:", responseMessage);
     if (responseMessage) {
       handleOpen();
     }
   }, [responseMessage]);
+  
 
   return (
     <>
@@ -209,8 +214,9 @@ const DocumentForensic = () => {
                             {/* Add options dynamically based on your data */}
                             {allowedTypes.map((type) => (
                               <option key={type} value={type}>
-                                {type}
+                                {type.replace('(QuantumPass)', '')}
                               </option>
+
                             ))}
  
                             {/* Add more options as needed */}

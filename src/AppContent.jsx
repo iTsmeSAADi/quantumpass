@@ -75,7 +75,7 @@ const AppContent = () => {
           element={<ProtectedRoute><QuickDocumentScan /></ProtectedRoute>}
         ></Route>
         <Route path="/documentsforensic" element={<ProtectedRoute><DocumentForensic /></ProtectedRoute>}></Route>
-        <Route path="/companydetail" element={<ProtectedRoute><CompanyDetail /></ProtectedRoute>}></Route>
+        <Route path="/companydetail/:id" element={<ProtectedRoute><CompanyDetail /></ProtectedRoute>}></Route>
         <Route path="/screeningreport/:_id" element={<ProtectedRoute><ScreeningReport /></ProtectedRoute>}></Route>
         <Route path="/forensicanalysis" element={<ProtectedRoute><ForensicAnalysis /></ProtectedRoute>}></Route>
         <Route
