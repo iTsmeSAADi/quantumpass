@@ -187,13 +187,40 @@ function isImageFile(url) {
         setLoading(false);
       } catch (error) {
         setError(error);
+        console.log('error', error)
         setLoading(false);
       }
     };
   
     fetchData();
   }, []); // Empty dependency array ensures useEffect runs only once on mount
-  
+  if (error) {
+    return (
+      <FadeIn delay={500} transitionDuration={1000}>
+        <div className="px-6">
+          <div className="flex items-start gap-x-3 mt-8" style={{ marginLeft: '30px' }}>
+            <h1 className="text-4xl font-semibold">Error Loading Data</h1>
+          </div>
+          <div className="px-6">
+            <div className="px-4 py-6 gap-x-3 mt-4 border shadow-lg rounded-lg">
+              <div className="flex flex-col lg:flex-row  justify-between gap-x-8">
+                <div style={{ width: '100%', minHeight: '300px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '12px', p: 3 }} className="border shadow-md w-full lg:w-[65%] p-4 h-[50%]  flex items-start justify-between rounded-lg">
+                  <div>
+                    <Typography level="title-xl" fontWeight="bold" mb={2}>
+                      Error Details
+                    </Typography>
+                    <Typography level="body-md" mb={1}>
+                      {error.response.data.message.message}
+                    </Typography>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </FadeIn>
+    );
+  }
 
 return data.success ? (
   data.screeningReport.manualScreeningId === 1 ? (

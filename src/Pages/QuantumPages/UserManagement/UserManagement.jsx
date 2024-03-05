@@ -220,9 +220,9 @@ const UserManagement = ({ userRole }) => {
                       <RxCross2 size={18} />
                     </button>
                   </div>
-                  <div className="py-3">
+                  {/* <div className="py-3">
                     <AppButton btnText={"Company"} />
-                  </div>
+                  </div> */}
 
                   {user.role === "superAdmin" ? (
                     <>
@@ -241,6 +241,23 @@ const UserManagement = ({ userRole }) => {
                         {({ isSubmitting }) => (
                           <Form>
                             {/* Rest of your form content... */}
+                            <div className="py-3">
+                              <label className="pb-2 font-bold">
+                                Enter Name
+                              </label>
+                              <Field
+                                type="text"
+                                name="name"
+                                autoComplete="off"
+                                className="w-full outline-none py-1 mt-1 rounded-lg border px-2"
+                                placeholder="Enter Your Name"
+                              />
+                              <ErrorMessage
+                                name="email"
+                                component="div"
+                                className="text-red-500"
+                              />
+                            </div>
                             <div className="py-3">
                               <label className="pb-2 font-bold">
                                 Enter Email
@@ -410,10 +427,11 @@ const UserManagement = ({ userRole }) => {
             {/* <UserManagementTable /> */}
             <table className=" w-[800px] lg:w-full   shadow-md">
               <tr className="px-2 py-1 rounded-md border-b">
-                <th className="text-start px-2 py-1">User_Id</th>
-                <th className="text-start">Email</th>
-                <th className="text-start">Role</th>
-                <th className="text-start">Company</th>
+                {/* <th className="text-start px-2 py-1">User_Id</th> */}
+                <th className="text-start px-2 py-1">Email</th>
+                <th className="text-start px-2 py-1">Name</th>
+                <th className="text-start px-2 py-1">Role</th>
+                <th className="text-start px-2 py-1">Company</th>
               </tr>
               {loading ? (
                 <div className="ml-96">
@@ -424,10 +442,11 @@ const UserManagement = ({ userRole }) => {
                 <>
                   {data?.data?.map((items) => (
                     <tr className="rounded-md border-b  ">
-                      <td className="py-2 px-2">{items._id}</td>
-                      <td>{items.email}</td>
-                      <td>{items.role}</td>
-                      <td>{items.companyName}</td>
+                      {/* <td>{items._id}</td> */}
+                      <td className="py-2 px-2 px-2 py-1">{items.email}</td>
+                      <td className="py-2 px-2 px-2 py-1">{items.name}</td>
+                      <td className="py-2 px-2 px-2 py-1">{items.role}</td>
+                      <td className="py-2 px-2 px-2 py-1">{items.companyName}</td>
                     </tr>
                   ))}
                 </>

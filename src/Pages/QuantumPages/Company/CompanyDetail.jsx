@@ -89,7 +89,6 @@ const CompanyDetail = () => {
   const [thirdSwitch, setthirdSwitch] = useState(true);
   const [fourSwitch, setFourSwitch] = useState(true);
   const [fiveSwitch, setFiveSwitch] = useState(true);
-  const [companyData, setCompanyData] = useState({})
 
   const handleSwitchChange = () => {
     setIsSwitchOn(!isSwitchOn);
@@ -120,27 +119,14 @@ const CompanyDetail = () => {
   const [openModal, setOpenModal] = React.useState(false);
   const handleOpenModal = () => setOpenModal(true);
   const handleCloseModal = () => setOpenModal(false);
-  useEffect(() => {
-    const tokens = localStorage.getItem("token");
-    console.log("my tokenssssss", tokens);
-
-  // navigate("/company")
-
-  }, []); 
-  // for refresh the page
-  const navigate=useNavigate()
-  const {id} = useParams()
-  console.log('id is', id)
+  const navigate = useNavigate();
+  const { id } = useParams();
+  const [companyData, setCompanyData] = useState(null);
 
   useEffect(() => {
     const tokens = localStorage.getItem("token");
     console.log("my tokenssssss", tokens);
 
-    // Extract id from the URL
-    const id = window.location.pathname.split("/")[2];
-
-    // Navigate to the company detail page
-    navigate(`/companydetail/${id}`);
     const fetchData = async () => {
       try {
         const response = await axios.get(`${baseUrl}/api/v1/company/${id}`, {
@@ -148,73 +134,75 @@ const CompanyDetail = () => {
             token: tokens,
           },
         });
-        console.log('companyData', companyData)
-        setCompanyData(response.data);
+        console.log("companyData", response.data.data);
+        setCompanyData(response.data.data);
         console.log("get.............", response.data.data);
       } catch (error) {
-        console.log(error)
+        console.error("Error fetching data:", error);
       }
     };
 
-    fetchData()
-
-
-  }, [navigate]);
-
+    fetchData();
+  }, [id]);
   return (
     <div>
-     <FadeIn  delay={500} transitionDuration={1000} >
-      <div className="px-6">
-        <div className=" flex items-center justify-between py-8">
-          
-          <h1 className="text-3xl font-semibold">Compnay name: {companyData.data.companyName}</h1>
-          <div className="flex gap-x-3 items-center">
-            <AppButton btnText={"Assign to Company"} />
-            <AppButton btnText={"Save"} />
+<FadeIn delay={500} transitionDuration={1000}>
+  <div className="px-6">
+    <div className="flex items-center justify-between py-8">
+      <h1 className="text-3xl font-semibold">
+        Company name: {companyData?.companyName}
+      </h1>
+      {/* <div className="flex gap-x-3 items-center">
+        <AppButton btnText={"Assign to Company"} />
+        <AppButton btnText={"Save"} />
+      </div> */}
+    </div>
+
+    {/* Section two */}
+    <div className="border shadow-md w-full mt-4 p-4 rounded-lg">
+      <h5
+        className="font-semibold text-l"
+        style={{ fontSize: "22px", margin: "10px 0" }}
+      >
+        Details
+      </h5>
+      <div className="space-y-6">
+        <div className="flex items-center justify-between">
+          <div className="w-full gap-x-8 flex">
+            <div className="w-full">
+              <p className="font-semibold">Email: </p>
+              <p>{companyData?.email}</p>
+            </div>
+            <div className="w-full">
+              <p className="font-semibold">Role: </p>
+              <p>{companyData?.role}</p>
+            </div>
           </div>
         </div>
-
-        {/* Section two */}
-        <div className="border shadow-md w-full mt-4 p-4  rounded-lg">
-          <h5 className="font-semibold text-l" style={{fontSize: '22px', margin: '10px 0'}}>Details</h5>
-          <div className=" space-y-6">
-            <div className="flex items-center justify-between">
-              <div className="w-full gap-x-8 flex">
-                <div className="w-full">
-                  <p className="font-semibold">Email: </p>
-                  <p>{companyData.data.email}</p>
-
-
-                </div>
-                <div className="w-full">
-                  <p className="font-semibold">Role: </p>
-                  <p>{companyData.data.role}</p>
-
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <hr style={{margin: '22px 0'}}/>
-          <div className=" space-y-6">
-            <div className="flex items-center justify-between">
-              <div className="w-full gap-x-8 flex">
-              <div className="w-full">
-  <p className="font-semibold">Created At: </p>
-  <p>{new Date(companyData.data.createdAt * 1000).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-</div>
-
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
       </div>
-      </FadeIn>
+      <hr style={{ margin: "22px 0" }} />
+      <div className="space-y-6">
+        <div className="flex items-center justify-between">
+          <div className="w-full gap-x-8 flex">
+            <div className="w-full">
+              <p className="font-semibold">Created At: </p>
+              <p>
+                {new Date(
+                  companyData?.createdAt * 1000
+                ).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</FadeIn>;
+
     </div>
   );
 };
